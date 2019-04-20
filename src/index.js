@@ -5,9 +5,18 @@ import './index.css';
 import Clock from './Clock';
 import * as serviceWorker from './serviceWorker';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+function App() {
+    return (
+        <div>
+            <Clock />
+            <Clock />
+            <Clock />
+        </div>
+    );
+}
+
 ReactDOM.render(
-    <Clock />,
+    <App />,
     document.getElementById('root')
 );
 
