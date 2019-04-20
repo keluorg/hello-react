@@ -2,21 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import Clock from './Clock';
+// import Clock from './Clock';
+import Toggle from './Toggle';
 import * as serviceWorker from './serviceWorker';
 
-function App() {
-    return (
-        <div>
-            <Clock />
-            <Clock />
-            <Clock />
-        </div>
-    );
-}
-
 ReactDOM.render(
-    <App />,
+    <Toggle />,
     document.getElementById('root')
 );
 
