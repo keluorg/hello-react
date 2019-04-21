@@ -5,25 +5,32 @@ import './index.css';
 // import Clock from './Clock';
 // import Toggle from './Toggle';
 // import LoginControl from './LoginControl'
+// import Page from './Page';
 import * as serviceWorker from './serviceWorker';
 
-function Mailbox(props) {
-    const unreadMessages = props.unreadMessages;
+function ListItem(props) {
+    // 正确！这里不需要指定 key：
+    return <li>{props.value}</li>;
+}
+
+function NumberList(props) {
+    const numbers = props.numbers;
+    const listItems = numbers.map((number) =>
+        // 正确！key 应该在数组的上下文中被指定
+        <ListItem key={number.toString()}
+                  value={number} />
+    );
     return (
-        <div>
-            <h1>Hello!</h1>
-            {unreadMessages.length > 0 &&
-            <h2>
-                You have {unreadMessages.length} unread messages.
-            </h2>
-            }
-        </div>
+        <ul>
+            {listItems}
+        </ul>
     );
 }
 
-const messages = ['React', 'Re: React', 'Re:Re: React'];
+const numbers = [1, 2, 3, 4, 5];
+
 ReactDOM.render(
-    <Mailbox unreadMessages={messages} />,
+    <NumberList numbers={numbers} />,
     document.getElementById('root')
 );
 
