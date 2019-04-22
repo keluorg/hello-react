@@ -7,15 +7,26 @@ import './index.css';
 // import LoginControl from './LoginControl'
 // import Page from './Page';
 // import NameForm from './NameForm'
-import Reservation from './Reservation'
+// import Reservation from './Reservation'
+
+import FilterableProductTable from './FilterableProductTable'
 import * as serviceWorker from './serviceWorker';
 
+console.log("kelu");
+
+const PRODUCTS = [
+    {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+    {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+    {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+    {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+    {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+    {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+];
+
 ReactDOM.render(
-    <Reservation />,
+    <FilterableProductTable products={PRODUCTS} />,
     document.getElementById('root')
 );
-
-console.log("kelu");
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
