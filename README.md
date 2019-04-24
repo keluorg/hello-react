@@ -9,6 +9,8 @@ npm start # 运行本地环境 localhost:3000
 
 ### react-router和react-router-dom的区别
 
+<https://reacttraining.com/react-router/web/guides/quick-start>
+
 `react-router`: 实现了路由的核心功能
 `react-router-dom`: 基于`react-router`，加入了在浏览器运行环境下的一些功能，例如：
 
@@ -17,7 +19,19 @@ npm start # 运行本地环境 localhost:3000
 
 ```
 npm install xxx --save # save省掉手动修改package.json文件的步骤。
-npm install react-router-dom --save-dev 
-npm install --save-dev webpack # webpack
+npm install react-router-dom --save-dev
 ```
 
+
+
+
+
+
+
+
+
+
+
+```
+npm install --save-dev webpack # webpack
+```
