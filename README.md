@@ -24,6 +24,12 @@ npm install react-router-dom --save-dev
 
 
 
+### export
+
+使用引用文件内部变量只能使用export关键字输出，通过export方式导出，在导入时要加{ }，export default则不需要。
+
+
+
 
 
 
