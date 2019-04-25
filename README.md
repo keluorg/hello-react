@@ -40,7 +40,9 @@ npm install react-router-dom --save-dev
 
 ## Webpack Loader
 
-[Babel](https://babeljs.io/)是一个广泛使用的转码器，可以将ES6代码转为ES5代码。要使用 webpack 编译 JSX，先安装对应的 loader
+[Babel](https://babeljs.io/)是一个广泛使用的转码器，可以将ES6代码转为ES5代码。要使用 webpack 编译 JSX，先安装对应的 loader。
+
+目前为止不用使用这么多loader，不过我接下来会使用sass和eslint，所以在这一步统一安装了。
 
 ```
 npm i babel-core babel-loader babel-preset-env babel-preset-react css-loader sass-loader style-loader url-loader eslint-loader -D
