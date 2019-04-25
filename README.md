@@ -54,12 +54,13 @@ webpack-dev-server
 # 访问 http://localhost:8080/build/index.html
 ```
 
-### babel是什么
+## Webpack Loader
 
 [Babel](https://babeljs.io/)是一个广泛使用的转码器，可以将ES6代码转为ES5代码。
 
+要编译 JSX，先安装对应的 loader
+
 ```
-npm i babel-core babel-loader babel-preset-env babel-preset-react -D
-# npm install babel-core babel-loader babel-preset-env babel-preset-react --save-dev
+npm i babel-core babel-loader babel-preset-env babel-preset-react css-loader sass-loader style-loader url-loader eslint-loader -D
 ```
 
