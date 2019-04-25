@@ -42,7 +42,7 @@ HashRouter最简单，不需要服务器端渲染，服务器端无论对任何U
 
 webpack提取原始的React组件，用于生成（几乎）每个浏览器都能理解的JavaScript代码。
 
-这部分参考: [React/Webpack 入门教程](https://juejin.im/entry/58ad405aac502e007e9ea6af)
+官方参考看这里，<https://www.webpackjs.com/guides/>
 
 ```
 npm install webpack -g
@@ -52,12 +52,7 @@ npm install webpack-dev-server -g
 webpack
 webpack-dev-server
 # 访问 http://localhost:8080/build/index.html
-
 ```
-
-
-
-
 
 ### babel是什么
 
@@ -65,5 +60,6 @@ webpack-dev-server
 
 ```
 npm i babel-core babel-loader babel-preset-env babel-preset-react -D
+# npm install babel-core babel-loader babel-preset-env babel-preset-react --save-dev
 ```
 
