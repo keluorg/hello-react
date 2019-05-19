@@ -7,6 +7,8 @@ import App from './components/App'
 
 let store = createStore(todoApp)
 
+store.subscribe(() => console.log(store.getState()))
+
 render(
   <Provider store={store}>
     <App />
